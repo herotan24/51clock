@@ -43,11 +43,11 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\</OutputDirectory>
+          <OutputDirectory>.\obj\</OutputDirectory>
           <OutputName>clock-sim</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\</ListingPath>
@@ -174,7 +174,7 @@
         <Target51>
           <Target51Misc>
             <MemoryModel>0</MemoryModel>
-            <RTOS>0</RTOS>
+            <RTOS>1</RTOS>
             <RomSize>2</RomSize>
             <DataHold>0</DataHold>
             <XDataHold>0</XDataHold>
@@ -218,7 +218,7 @@
               <RCB>
                 <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x0</Size>
+                <Size>0xffff</Size>
               </RCB>
               <RXB>
                 <Type>0</Type>
@@ -350,6 +350,22 @@
       <Groups>
         <Group>
           <GroupName>task</GroupName>
+        </Group>
+        <Group>
+          <GroupName>key</GroupName>
+        </Group>
+        <Group>
+          <GroupName>bee</GroupName>
+          <Files>
+            <File>
+              <FileName>bee.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\bee\bee.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>port</GroupName>
         </Group>
       </Groups>
     </Target>
